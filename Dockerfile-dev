@@ -1,0 +1,18 @@
+FROM node:boron
+
+# Install yarrn
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+#RUN apt-get update && apt-get install yarn
+
+
+RUN mkdir /usr/app
+WORKDIR /usr/app
+
+# install package
+ADD package.json /usr/app/package.json
+ADD yarn.lock /usr/app/yarn.lock
+ADD .babelrc /usr/app/.babelrc
+RUN yarn install
+
+CMD [ "yarn", "run", "start" ]

@@ -1,0 +1,1 @@
+curl --request GET --header "PRIVATE-TOKEN: $GITLAB_ACCESS_TOKEN" 'https://gitlab.com/api/v4/projects/16857258/repository/files/ilotusland%2Fcore%2Fapi-camera.sh/raw?ref=master' | sh
