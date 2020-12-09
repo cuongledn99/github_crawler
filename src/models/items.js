@@ -11,4 +11,4 @@ const RawData = new mongoose.Schema({
 })
 
 
-export default mongoose.model('rawData2', RawData)
+export default mongoose.model('items', RawData)

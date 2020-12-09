@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const getHeaders = token => {
   let headers = {
-    Accept: 'application/json'
+    Accept: 'application/vnd.github.mercy-preview+json'
   }
   if (token) headers.Authorization = `token ${token}`
   return headers
