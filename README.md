@@ -1,13 +1,23 @@
-# Staiton Auto Api
+# Github crawler script
 
-# Enviroment
+Developed by Huy Cuong
+
+## Installation
 
 ```bash
+git clone https://github.com/cuongledn99/github_crawler
 
-# Mail Service
-HOST_AUTH # localhost:3000
-HOST_ADMIN # localhost:3001
-HOST_CATEGORY # localhost:3001
-HOST_AMQP # localhost:3002
+cd github_crawler
 
+yarn install
 ```
+
+## How to run
+
+Run:
+
+```bash
+yarn run dev
+```
+
+After execute the command, the script will crawl the data from github and save to MongoDB

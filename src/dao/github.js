@@ -1,6 +1,6 @@
 import rawData from 'models/rawData'
 import repositories from 'models/repositories'
-import cuongModel from 'models/finalModel'
+import finalModel from 'models/finalModel'
 import { getFetch } from 'utils/fetch'
 import { GITHUB_API, GITHUB_TOKEN } from '../config'
 
@@ -40,7 +40,10 @@ export default {
       //   ...repo,
       //   contributorUrl: con.html_url
       // })
-      const aa = await cuongModel.create(JSON.parse(repo))
+      finalModel.create({
+        ...repo,
+        contributor: con.html_url
+      })
       // aa.save()
       // console.log(aa)
       // process.exit(1)

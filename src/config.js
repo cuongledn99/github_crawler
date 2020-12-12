@@ -1,7 +1,7 @@
 export const PORT = 5023;
 
 export const GITHUB_API = 'https://api.github.com'
-export const GITHUB_TOKEN = '78b60d3a9e799ae295b0df4e6de3c57259cdf062'
+export const GITHUB_TOKEN = '1ea97d1f45356e3ac94317d7cb5231330ce5cfb4'
 
 export const MONGODB_OPTIONS = {
   database: `mongodb://103.89.85.226/github`,

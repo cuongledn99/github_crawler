@@ -65,6 +65,9 @@ export function getFetch(url, data, props, token) {
         //   reject({ error: true })
         // }
       })
-      .catch(e => reject(e))
+      .catch(e => {
+        // console.log(e)
+        reject(e)
+      })
   })
 }

@@ -31,4 +31,4 @@ const FinalModel = new mongoose.Schema({
 })
 
 
-export default mongoose.model('quideptrai', FinalModel)
+export default mongoose.model('finalModel3', FinalModel)
